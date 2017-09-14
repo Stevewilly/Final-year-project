@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+   >
+<RelativeLayout
+    android:id="@+id/content_grid_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#fff"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_marginBottom="10dp"
+android:layout_marginTop="30dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.drake.stamploadproject.Activity.Pink_house_Card"
+    tools:showIn="@layout/activity_grid_view"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cardview1"
+
+        android:layout_marginBottom="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#FF3349"
+                android:id="@+id/MerchantName"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FF3349"
+                android:id="@+id/End_Date"
+                android:layout_below="@+id/MerchantName"
+                android:layout_alignLeft="@+id/MerchantName"
+                android:layout_alignStart="@+id/MerchantName"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                card_view:srcCompat="@drawable/circle_shape"
+                android:layout_alignTop="@+id/MerchantName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginStart="7dp"
+                android:id="@+id/logoCard" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/End_Date"
+                android:gravity="center_horizontal">
+                <TextView
+                    android:text="Rewards"
+                    android:textColor="#FF3349"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rewards_details"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@+id/End_Date"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardview2"
+        android:layout_below="@+id/cardview1"
+
+
+
+        android:layout_marginBottom="5dp">
+        <android.support.v7.widget.RecyclerView
+            android:id = "@+id/recycler_view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            >
+
+
+        </android.support.v7.widget.RecyclerView>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cardview2"
+
+            android:layout_marginBottom="5dp">
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="153dp"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                   >
+                    <Button
+                        android:id="@+id/cancel_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:background="@drawable/shape"
+                        android:textColor="@color/text_color"
+                        android:text="Cancel"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true">
+
+                    </Button>
+
+                    <EditText
+                        android:layout_width="155dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/code_number1"
+                        android:background="#303030"
+                        android:layout_above="@+id/gain_stamp1"
+                        android:textColor="#fff"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginBottom="23dp"
+                        android:text="Enter code" />
+
+                    <Button
+                        android:id="@+id/gain_stamp1"
+                        android:layout_width="match_parent"
+                        android:layout_height="36dp"
+                        android:background="@drawable/shape"
+                        android:textColor="@color/text_color"
+                        android:text="@string/gain_stamp"
+                        android:layout_above="@+id/cancel_card1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <Button
+                        android:id="@+id/scan_qr1"
+                        android:layout_width="80dp"
+                        android:layout_height="36dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:text="Scan Qr"
+
+                        android:layout_alignBottom="@+id/code_number1"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>

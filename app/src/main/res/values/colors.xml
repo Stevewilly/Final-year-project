@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e29413</color>
+    <color name="colorPrimaryDark">#ffff00</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="btn_redeem">#e29413</color>
+    <color name="text_color">#ffff</color>
+    <color name="textBackground">#413e4f</color>
+    <color name="card_pinkHouse">#CDEA14</color>
+</resources>

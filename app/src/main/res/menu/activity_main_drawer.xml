@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/stamp_and_rewards"
+            android:icon="@mipmap/medal"
+            android:title="Stamp and Rewards" />
+        <item
+            android:id="@+id/feedback"
+            android:icon="@drawable/messenger_bubble_large_blue"
+            android:title="FeedBack" />
+        <item
+            android:id="@+id/Account_details"
+            android:icon="@mipmap/info1"
+            android:title="Account Details" />
+        <item
+            android:id="@+id/notifications"
+            android:icon="@drawable/messenger_button_blue_bg_round"
+            android:title="Notifications" />
+        <item
+            android:id="@+id/log_out"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:title="Log Out" />
+    </group>
+
+
+
+</menu>
